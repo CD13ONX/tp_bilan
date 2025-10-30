@@ -43,3 +43,6 @@ except subprocess.CalledProcessError as e:
     print(simulation_mail(destinataire_email, "Erreur lors de la sauvegarde : "+ erreur))
     with open(log_file, "a") as f:
         f.write(f"{datetime.datetime.now()} - {erreur} - ERREUR\n")
+
+
+
